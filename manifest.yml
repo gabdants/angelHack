@@ -1,0 +1,11 @@
+applications:
+- buildpack: java_buildpack
+  domain: null
+  host: null
+  instances: 1
+  memory: 256M
+  name: javaback
+  path: ./target/javaback-1.0-SNAPSHOT.jar
+  routes:
+  - route: java-back.us-south.cf.appdomain.cloud
+  timeout: 180
